@@ -1,17 +1,17 @@
 package iloggedin.github;
 
 public class Book {
-    private String author;
-    private String title;
-    private float price;
-    public Book(String author, String title, float price){
-        this.author = author;
+    private final String author;
+    private final String title;
+    private final float price;
+    public Book(String title, String author, float price){
         this.title = title;
+        this.author = author;
         this.price = price;
     }
 
     @Override
     public String toString(){
-        return "\nauthor: " + author + "\ntitle: " + title  + "\nprice: " + price;
+        return "\ntitle: " + title + "\nauthor: " + author + "\nprice: " + price;
     }
 }
